@@ -14,6 +14,7 @@ class Article < ApplicationRecord
   end
 
   def show
+    @articles = Article.find(params(:id))
   end
 
   def update
